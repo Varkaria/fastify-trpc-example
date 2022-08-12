@@ -1,0 +1,29 @@
+{
+  "name": "fastify-trpc-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --config nodemon.json",
+    "build": "swc src -d build",
+    "start": "NODE_ENV=production node build",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fastify/cookie": "^7.4.0",
+    "@fastify/cors": "^8.1.0",
+    "@fastify/helmet": "^9.1.0",
+    "@trpc/server": "^9.27.0",
+    "fastify": "^4.4.0",
+    "nodemon": "^2.0.19",
+    "superjson": "^1.9.1"
+  },
+  "devDependencies": {
+    "@swc/cli": "^0.1.57",
+    "@swc/core": "^1.2.226",
+    "@types/node": "^18.7.2"
+  }
+}
